@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Artem Ohii</title>
+	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Oswald:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body id="body">
+	<div class="container">
+		<header class="header">
+			<a href="#" class="header__logo">Artem Ohii</a>
+			<div class="header__burger">
+				<span id="icon-menu" onclick="navToggle()" class="material-icons _active">
+					menu
+				</span>
+			</div>
+			<nav id="nav" class="header-nav">
+				<ul class="header-nav__ul">
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a">Home</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a">About Me</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a">Projects</a>
+					</li>
+					<li class="header-nav__li">
+						<a href="#" class="header-nav__a">Contact me</a>
+					</li>
+				</ul>
+				<span id="icon-close" onclick="navToggle()" class="material-icons">
+					close
+				</span>
+			</nav>
+		</header>
+	</div>
+	<hr>
+	<div class="container">
+		<div class="main-screen">
+			<div class="main-screen__info">
+				<div class="main-screen__title">
+					HTML/CSS <span>DEVELOPER</span>
+				</div>
+				<div class="main-screen__btns">
+					<a class="main-screen__hire btn">Hire me</a>
+				<a class="main-screen__download">Download CV 
+					<img src="./img/download.svg" alt="download">
+				</a>
+				</div>
+			</div>
+			<div class="main-screen__img">
+				<img src="./img/man1.svg" alt="">
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="script.js"></script>
+
+
+</html>

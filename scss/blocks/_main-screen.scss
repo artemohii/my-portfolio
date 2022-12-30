@@ -1,0 +1,62 @@
+.main-screen {
+    display: flex;
+    gap: 80px;
+    height: 530px;
+
+
+    // .main-screen__info
+
+    &__info {
+        max-width: 586px;
+
+    }
+
+    // .main-screen__title
+
+    &__title {
+        cursor: default;
+        @include text($font, 700, 96px, 96px, $color-white);
+        margin-bottom: 50px;
+        span {
+            color: $color-secondary;
+        }
+    }
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    // .main-screen__hire
+
+    &__hire, &__download  {
+        @include text($font, 700, 18px, 27px, $color-primary);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    // .main-screen__download
+
+    &__download {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 32px;
+        background: rgba(57, 62, 70, 0.75);
+        backdrop-filter: blur(2px);
+        border-radius: 24px;
+        transition: $transition;
+        border: 2px solid transparent;
+
+        &:hover {
+            background: $color-secondary;
+            text-shadow: none;
+
+        }
+
+    }
+
+    // .main-screen__img
+
+    &__img {
+    }
+}
+

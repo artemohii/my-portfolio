@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        @include text($font-logo, 700, 24px, 36px, $color-primary);
+        transition: $transition;
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+    
+    &__burger {
+        display: none;
+        @include desktop-small {
+            display: block;
+        }
+    }
+}
+.header-nav {
+    .material-icons {
+        color: $color-white;
+        display: none;
+        @include desktop-small {
+            display: block;
+            position: absolute;
+            top: 40px;
+            right: 20px;
+        }
+    }
+    &__ul {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        @include desktop-small {
+            background: $color-bg;
+            opacity: .8;
+        }
+    }
+
+    &__a {
+        @include text($font, 400, 18px, 27px, $color-primary);
+        display: inline-block;
+        padding: 10px;
+        border-bottom: 2px solid transparent;
+        transition: $transition;
+        @include desktop-small {
+            color: $color-primary;
+        }
+        &:hover {
+            color: $color-secondary;
+            border-bottom: 2px solid $color-secondary;
+
+        }
+    }
+    @include desktop-small {
+        position: fixed;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.8);
+        transform: translateX(-150%);
+        transition: $transition;
+        .header-nav__ul {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .header-nav__a {
+            font-size: 18px;
+        }
+    }
+    &._active {
+        transform: translateX(0);
+    }
+}
