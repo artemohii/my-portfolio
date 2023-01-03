@@ -1,0 +1,32 @@
+.footer {
+    & hr {
+        margin-bottom: 0;
+    }
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+
+		// .footer-nav__ul
+
+		&__ul {
+            display: flex;
+            gap: 55px;
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+            }
+            //margin: 0 auto;
+		}
+
+		// .footer-nav__li
+
+		&__li {
+		}
+
+		// .footer-nav__a
+
+		&__a {
+		}
+}

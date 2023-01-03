@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     &__logo {
-        @include text($font-logo, 700, 24px, 36px, $color-primary);
+        @include text($font-logo, 700, 24px, 36px, $color-white);
         transition: $transition;
         &:hover {
             color: $color-secondary;
@@ -40,18 +40,13 @@
     }
 
     &__a {
-        @include text($font, 400, 18px, 27px, $color-primary);
-        display: inline-block;
         padding: 10px;
         border-bottom: 2px solid transparent;
-        transition: $transition;
         @include desktop-small {
             color: $color-primary;
         }
         &:hover {
-            color: $color-secondary;
             border-bottom: 2px solid $color-secondary;
-
         }
     }
     @include desktop-small {
