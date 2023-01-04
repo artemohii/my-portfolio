@@ -15,9 +15,11 @@
 </head>
 
 <body id="body">
-	<div class="container">
-		<header class="header">
-			<a href="#" class="header__logo">Artem Ohii</a>
+	<div class="container" id="container">
+		<header class="header" >
+
+			<a href="https://github.com/artemohii" class="header__logo">Artem Ohii</a>
+
 			<div class="header__burger">
 				<span id="icon-menu" onclick="navToggle()" class="material-icons _active">
 					menu
@@ -26,22 +28,23 @@
 			<nav id="nav" class="header-nav">
 				<ul class="header-nav__ul">
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a nav__a">Home</a>
+						<a href="#container" class="header-nav__a nav__a"   onclick="navToggle()">Home</a>
 					</li>
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a nav__a">About Me</a>
+						<a href="#about" class="header-nav__a nav__a"  onclick="navToggle()">About Me</a>
 					</li>
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a nav__a">Projects</a>
+						<a href="#projects" class="header-nav__a nav__a"  onclick="navToggle()">Projects</a>
 					</li>
 					<li class="header-nav__li">
-						<a href="#" class="header-nav__a nav__a">Contact me</a>
+						<a href="#contact" class="header-nav__a nav__a"  onclick="navToggle()">Contact me</a>
 					</li>
 				</ul>
 				<span id="icon-close" onclick="navToggle()" class="material-icons">
 					close
 				</span>
 			</nav>
+
 		</header>
 	</div>
 	<hr>
@@ -52,8 +55,8 @@
 					HTML/CSS <span>DEVELOPER</span>
 				</div>
 				<div class="main-screen__btns">
-					<a class="main-screen__hire btn">Hire me</a>
-				<a class="main-screen__download">Download CV 
+					<a  href="mailto:ohiiartem@gmail.com" class="main-screen__hire btn" target="_blank">Hire me</a>
+				<a href="./cv.pdf" class="main-screen__download" download="cv">Download CV 
 					<img src="./img/download.svg" alt="download">
 				</a>
 				</div>
@@ -62,11 +65,12 @@
 				<img src="./img/man1.svg" alt="">
 			</div>
 		</section>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="about__info">
 				<div class="about__title title">About <span>me</span>
 				</div>
-				<div class="about__decs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortiLorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. </div>
+				<div class="about__decs">
+					Front-End Developer with a proven ability to collaborate effectively with senior developers while spending extra time to be mentored. Enjoy working closely with team members to ensure workloads are effectively redirected to bottlenecks and personally picking up the slack when necessary. With a passion for both personal growth and for software development, I attended a 1000+ hour coding bootcamp to learn new languages while sharpening existing skills. Ready to apply my passion for coding to a talented engineering team to develop quality solutions.</div>
 			</div>
 			<div class="about__img">
 				<img src="./img/man2.svg" alt="about">
@@ -74,11 +78,12 @@
 		</section>
 	</div>
 	<hr>
-	<section class="works">
+	<section class="works" id="projects">
 		<div class="container">
 			<div class="works__title title">My recent <span>works</span></div>
 			<div class="works__items">
 				<div class="works__item">
+					<!-- <img src="./img/works/work1.svg" alt=""> -->
 					<div class="item__hover">
 						<div class="item__title">Waiter App</div>
 						<div class="item__desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil veniam libero nemo? Repellat placeat nihil voluptates, sequi maiores eligendi corrupti.Nihil veniam libero nemo? Repellat placeat nihil voluptates, sequi maiores eligendi corrupti.Repellat...</div>
@@ -93,7 +98,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="container contact__wrapper">
 			<div class="contact__info">
 				<div class="contact__title title">Contact <span>me</span></div>
@@ -125,16 +130,16 @@
 		<nav  class="footer-nav">
 			<ul class="footer-nav__ul">
 				<li class="footer-nav__li">
-					<a href="#" class="footer-nav__a nav__a">Home</a>
+					<a href="#container" class="footer-nav__a nav__a">Home</a>
 				</li>
 				<li class="footer-nav__li">
-					<a href="#" class="footer-nav__a nav__a">About Me</a>
+					<a href="#about" class="footer-nav__a nav__a">About Me</a>
 				</li>
 				<li class="footer-nav__li">
-					<a href="#" class="footer-nav__a nav__a">Projects</a>
+					<a href="#projects" class="footer-nav__a nav__a">Projects</a>
 				</li>
 				<li class="footer-nav__li">
-					<a href="#" class="footer-nav__a nav__a">Contact me</a>
+					<a href="#contact" class="footer-nav__a nav__a">Contact me</a>
 				</li>
 			</ul>
 		</nav>

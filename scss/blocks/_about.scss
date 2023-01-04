@@ -63,7 +63,8 @@
     // .about__decs
 
     &__decs {
-    @include text($font, 400, 18px, 27px, rgba(238, 238, 238, 0.75));
+        cursor: default;
+        @include text($font, 400, 18px, 27px, rgba(238, 238, 238, 0.75));
     }
 
     // .about__img

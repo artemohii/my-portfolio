@@ -1,6 +1,9 @@
 .works {
     background: url(./img/works.svg);
     padding: 180px 0;
+    @include mobile {
+        padding: 0;
+    }
 
 
     // .works__title
