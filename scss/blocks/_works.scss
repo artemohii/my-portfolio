@@ -107,6 +107,9 @@
     transform: translateY(+150%);
     transition: .6s all ease-in-out;
     background: rgba(57, 62, 70, 0.4);
+    @include tablet {
+        display: none;
+    }
     
 }
 .item__title {
