@@ -1,8 +1,8 @@
 .works {
     background: url(./img/works.svg);
     padding: 180px 0;
-    @include mobile {
-        padding: 0;
+    @include desktop-small{
+        padding: 20px 0;
     }
 
 
@@ -29,27 +29,24 @@
     // .works__item
 
     &__item {
-        //padding: 50px;
         position: relative;
         overflow:hidden;
-        //max-width: 368px;
         height: 280px;
         cursor: pointer;
-        background:url(./img/item1.svg) no-repeat center, rgba(57, 62, 70, 0.5);
+        background: rgba(57, 62, 70, 0.5);
         border-radius: 16px;
         transition: $transition;
         @include tablet-small {
-            background-size: cover;
+            //background-size: cover;
         }
 
         &:hover {
-        //filter: blur(2px);
-
-
+            .item__img {
+                filter: blur(8px);
+            }
             .item__hover {
                 transform: translateX(0);
-
-
+                
             }
 
         }
@@ -61,18 +58,61 @@
     
 
 }
-.item__hover {
+.item__img {
+    
     position: absolute;
-    padding: 20px;
-    transform: translateX(-150%);
-    transition: $transition;
-
+    top: 60px;
+    bottom: 60px;
+    right: 50px;
+    left: 50px;
+    transition: .6s all ease-in-out;
+}
+.item__work1 {
+    background:url(./img/works/work1.svg) no-repeat top;
+    background-size: cover;
+}
+.item__work2 {
+    background:url(./img/works/work2.svg) no-repeat top;
+    background-size: cover;
+}
+.item__work3 {
+    background:url(./img/works/work3.svg) no-repeat top;
+    background-size: cover;
+}
+.item__work4 {
+    background:url(./img/works/work4.svg) no-repeat top;
+    background-size: cover;
+}
+.item__work5 {
+    background:url(./img/works/work5.svg) no-repeat top;
+    background-size: cover;
+}
+.item__work6 {
+    background:url(./img/works/work6.svg) no-repeat top;
+    background-size: cover;
+}
+.item__hover {
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateY(+150%);
+    transition: .6s all ease-in-out;
+    background: rgba(57, 62, 70, 0.4);
+    
 }
 .item__title {
     @include text($font, 700, 16px, 24px, $color-primary);
     margin-bottom: 7px;
 }
 .item__desc {
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     @include text($font, 400, 14px, 21px, $color-primary);
+}
+.item__btn {
+    position: absolute;
+    bottom: 25px;
+
 }

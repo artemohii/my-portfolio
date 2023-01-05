@@ -11,6 +11,7 @@ body {
   font-style: $font;
   color: $color-primary;
   background: $color-bg;
+  position: relative;
 }
 html,
 body {
@@ -66,8 +67,15 @@ hr {
   &:hover {
     background: $color-bg;
     border: 2px solid $color-secondary;
-
   }
+  @include tablet {
+    &:hover {
+    background: $color-secondary;
+    border: 2px solid transparent;
+
+    }
+  }
+  
 }
 .title {
   cursor: default;
@@ -84,4 +92,22 @@ span {
   &:hover {
     color: $color-secondary;
 }
+}
+
+.material-icons {
+  font-size: 36px !important;
+}
+
+.vertical {
+  position: absolute;
+  left: 39%;
+  height: 54%;
+  border: 0;
+  border-left: 1px solid rgba(238, 238, 238, 0.1);
+  @include desktop-small {
+    display: none;
+  }
+  /* width: 1px;
+  background: rgba(238, 238, 238, 0.1); */
+
 }
