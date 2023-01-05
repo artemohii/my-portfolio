@@ -61,11 +61,17 @@
 .item__img {
     
     position: absolute;
-    top: 60px;
-    bottom: 60px;
-    right: 50px;
-    left: 50px;
+    top: 50px;
+    bottom: 50px;
+    right: 40px;
+    left: 40px;
     transition: .6s all ease-in-out;
+    @include mobile {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
 }
 .item__work1 {
     background:url(./img/works/work1.svg) no-repeat top;
