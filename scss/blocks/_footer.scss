@@ -1,6 +1,19 @@
 .footer {
+    position: relative;
     & hr {
         margin-bottom: 0;
+    }
+    &__up {
+        position: absolute;
+        right: 20px;
+        bottom: 20%;
+        width: 60px;
+        height: 60px;
+        background: url(./img/arrow.svg) center no-repeat,rgba(57,62,70,0.75);
+        transform: rotate(180deg);
+        @include mobile {
+            bottom: 5%;
+        }
     }
 }
 .footer-nav {
@@ -23,11 +36,6 @@
 
 		// .footer-nav__li
 
-		&__li {
-		}
-
-		// .footer-nav__a
-
-		&__a {
-		}
+		
 }
+
