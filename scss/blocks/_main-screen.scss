@@ -121,9 +121,14 @@
         left: 30%;
         width: 96px;
         height: 96px;
+        transition: $transition;
         background: url(./img/arrow.svg) center no-repeat, rgba(57, 62, 70, 0.75);
         @include desktop-small {
             display: none;
+        }
+        &:hover{
+        background: url(./img/arrow.svg) center no-repeat, rgba(57, 62, 70, 0.2);
+            
         }
     }
 }
