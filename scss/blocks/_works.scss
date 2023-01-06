@@ -10,6 +10,9 @@
 
     &__title {
         margin-bottom: 50px;
+        @include mobile {
+            font-size: 39px;
+        }
     }
 
     // .works__items
@@ -36,8 +39,13 @@
         background: rgba(57, 62, 70, 0.5);
         border-radius: 16px;
         transition: $transition;
-        @include tablet-small {
-            //background-size: cover;
+        @include tablet {
+            transition: none;
+            &:hover {
+                .item__img {
+                    filter: blur(0);
+                }
+            }
         }
 
         &:hover {

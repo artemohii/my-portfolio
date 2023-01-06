@@ -1,6 +1,9 @@
 .contact {
     padding: 100px 0;
     position: relative;
+    @include mobile {
+        padding: 20px 0;
+    }
     
     &__wrapper {
         display: grid;
@@ -42,6 +45,9 @@
 
     &__social-item:not(:last-of-type) {
         margin-bottom: 10px;
+        @include mobile {
+            margin-bottom: 30px;
+        }
     }
 
     // .contact__name
