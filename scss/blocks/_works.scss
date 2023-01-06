@@ -50,12 +50,12 @@
 
         }
         @include tablet {
-            transition: none;
+            transition: 0s all ease-in-out;
             filter: blur(0);
             &:hover {
                 .item__img {
                     filter: blur(0) ;
-                    transition: none;
+                    transition: 0s all ease-in-out;
 
                 }
             }
