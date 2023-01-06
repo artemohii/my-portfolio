@@ -39,15 +39,6 @@
         background: rgba(57, 62, 70, 0.5);
         border-radius: 16px;
         transition: $transition;
-        @include tablet {
-            transition: none;
-            &:hover {
-                .item__img {
-                    filter: blur(0);
-                }
-            }
-        }
-
         &:hover {
             .item__img {
                 filter: blur(8px);
@@ -57,6 +48,15 @@
                 
             }
 
+        }
+        @include tablet {
+            transition: none;
+            filter: blur(none);
+            &:hover {
+                .item__img {
+                    filter: blur(none);
+                }
+            }
         }
         
 
