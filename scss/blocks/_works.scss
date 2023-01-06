@@ -51,10 +51,12 @@
         }
         @include tablet {
             transition: none;
-            filter: blur(none);
+            filter: blur(0);
             &:hover {
                 .item__img {
-                    filter: blur(none);
+                    filter: blur(0) ;
+                    transition: none;
+
                 }
             }
         }
