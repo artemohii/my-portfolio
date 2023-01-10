@@ -6,7 +6,7 @@ function carouselFn(){
         margin:10,
         loop:true,
         });
-     }else if ($(window).width() < 992){
+     }/* else if ($(window).width() < 992){
         $(".owl-carousel").owlCarousel({
    
             items:1.5,
@@ -14,7 +14,7 @@ function carouselFn(){
             loop:true,
             });
 
-     }
+     } */
      else{
       $(".owl-carousel").owlCarousel({
    
