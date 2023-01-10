@@ -1,3 +1,9 @@
+$('.owl-carousel').owlCarousel({
+    items:1,
+    lazyLoad:true,
+    loop:true,
+    margin:10
+});
 /* function carouselFn(){
     if ($(window).width() < 500){
        $(".owl-carousel").owlCarousel({
@@ -34,9 +40,4 @@
    $(window).resize(function(){
         carouselFn();     
     }); */
-    $('.owl-carousel').owlCarousel({
-        items:1,
-        lazyLoad:true,
-        loop:true,
-        margin:10
-    });
+    
